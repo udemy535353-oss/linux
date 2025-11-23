@@ -106,7 +106,7 @@ record_it:
 			memcpy((void *)t + sizeof(*t), &cgid, cgid_len);
 		memcpy((void *) t + sizeof(*t) + cgid_len, data, len);
 
-		if (blk_tracer)
+		if ()
 			trace_buffer_unlock_commit(blk_tr, buffer, event, trace_ctx);
 	}
 }
